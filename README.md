@@ -32,6 +32,9 @@ Reproducible examples from different R blogs
 
 10.
   + Original article: http://blog.revolutionanalytics.com/2015/12/using-segmented-regression-to-analyse-world-record-running-times.html
+
+11. [Expotential Smoothing of time series](exp_smoothing_of_time_series)
+  + Original article: https://www.linkedin.com/pulse/exponential-smoothing-time-series-data-r-strickland-ph-d-cmsp
   
 ## gists search of R files
 1. https://gist.github.com/search?l=r&q=language%3AR&ref=searchresults&utf8=%E2%9C%93
