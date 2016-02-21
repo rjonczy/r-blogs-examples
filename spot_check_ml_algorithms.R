@@ -287,6 +287,7 @@ summary(fit.knn)
 # --------------------------------------------------------------
 # Naive Bayes
 # --------------------------------------------------------------
+# Classification
 
 # load the libraries
 library(e1071)
@@ -296,10 +297,11 @@ library(mlbench)
 data(PimaIndiansDiabetes)
 
 # fit model
-fit <- naiveBayes(diabetes~., data=PimaIndiansDiabetes)
+fit <- naiveBayes(diabetes ~ ., data=PimaIndiansDiabetes)
 
 # summarize the fit
 print(fit)
+summary(fit)
 
 # make predictions
 predictions <- predict(fit, PimaIndiansDiabetes[,1:8])
@@ -308,6 +310,7 @@ predictions <- predict(fit, PimaIndiansDiabetes[,1:8])
 table(predictions, PimaIndiansDiabetes$diabetes)
 
 # --------------------------------------------------------------
+# Classification (caret)
 
 # load libraries
 library(caret)
@@ -326,17 +329,176 @@ print(fit.nb)
 
 # --------------------------------------------------------------
 
+
 # --------------------------------------------------------------
 # Support Vector Machine
 # --------------------------------------------------------------
+# Classification
+
+#load the libraries
+library(kernlab)
+library(mlbench)
+
+# Load the dataset
+data(PimaIndiansDiabetes)
+
+# fit model
+fit <- ksvm(diabetes ~ ., data=PimaIndiansDiabetes, kernel="rbfdot")
+
+# summarize the fit
+print(fit)
+
+# make predictions
+predictions <- predict(fit, PimaIndiansDiabetes[,1:8], type="response")
+
+# summarize accuracy
+table(predictions, PimaIndiansDiabetes$diabetes)
+
 # --------------------------------------------------------------
+# Regression
+
+# load the libraries
+library(kernlab)
+library(mlbench)
+
+# load data
+data(BostonHousing)
+
+# fit model
+fit <- ksvm(medv ~ ., BostonHousing, kernel="rbfdot")
+
+# summarize the fit
+print(fit)
+
+# make predictions
+predictions <- predict(fit, BostonHousing)
+
+# summarize accuracy
+mse <- mean((BostonHousing$medv - predictions)^2)
+print(mse)
+
+# --------------------------------------------------------------
+# Classification (caret)
+
+# load libraries
+library(caret)
+library(mlbench)
+
+# Load the dataset
+data(PimaIndiansDiabetes)
+
+# train
+set.seed(7)
+control <- trainControl(method="cv", number=5)
+fit.svmRadial <- train(diabetes ~ ., data=PimaIndiansDiabetes, method="svmRadial", metric="Accuracy", trControl=control)
+
+# summarize fit
+print(fit.svmRadial)
+
+# --------------------------------------------------------------
+# Regression (caret)
+
+# load libraries
+library(caret)
+library(mlbench)
+
+# Load the dataset
+data(BostonHousing)
+
+# train
+set.seed(7)
+control <- trainControl(method="cv", number=5)
+fit.svmRadial <- train(medv ~ ., data=BostonHousing, method="svmRadial", metric="RMSE", trControl=control)
+
+# summarize fit
+print(fit.svmRadial)
+
 # --------------------------------------------------------------
 
 
 # --------------------------------------------------------------
-# Classification and Regression Trees
+# Classification and Regression tress
 # --------------------------------------------------------------
+# Classification
+
+# load the libraries
+library(rpart)
+library(mlbench)
+
+# Load the dataset
+data(PimaIndiansDiabetes)
+
+# fit model
+fit <- rpart(diabetes ~ ., data=PimaIndiansDiabetes)
+
+# summarize the fit
+print(fit)
+summary(fit)
+
+# make predictions
+predictions <- predict(fit, PimaIndiansDiabetes[,1:8], type="class")
+
+# summarize accuracy
+table(predictions, PimaIndiansDiabetes$diabetes)
+
 # --------------------------------------------------------------
+# Regression
+
+# load the libraries
+library(rpart)
+library(mlbench)
+
+# load data
+data(BostonHousing)
+
+# fit model
+fit <- rpart(medv ~ ., data=BostonHousing, control=rpart.control(minsplit=5))
+
+# summarize the fit
+print(fit)
+
+# make predictions
+predictions <- predict(fit, BostonHousing[,1:13])
+
+# summarize accuracy
+mse <- mean((BostonHousing$medv - predictions)^2)
+print(mse)
+
+# --------------------------------------------------------------
+# Classification (caret)
+
+# load libraries
+library(caret)
+library(mlbench)
+
+# Load the dataset
+data(PimaIndiansDiabetes)
+
+# train
+set.seed(7)
+control <- trainControl(method="cv", number=5)
+fit.rpart <- train(diabetes~., data=PimaIndiansDiabetes, method="rpart", metric="Accuracy", trControl=control)
+
+# summarize fit
+print(fit.rpart)
+
+# --------------------------------------------------------------
+# Regression (caret)
+
+# load libraries
+library(caret)
+library(mlbench)
+
+# Load the dataset
+data(BostonHousing)
+
+# train
+set.seed(7)
+control <- trainControl(method="cv", number=2)
+fit.rpart <- train(medv~., data=BostonHousing, method="rpart", metric="RMSE", trControl=control)
+
+# summarize fit
+print(fit.rpart)
 # --------------------------------------------------------------
 
 
