@@ -477,7 +477,7 @@ data(PimaIndiansDiabetes)
 # train
 set.seed(7)
 control <- trainControl(method="cv", number=5)
-fit.rpart <- train(diabetes~., data=PimaIndiansDiabetes, method="rpart", metric="Accuracy", trControl=control)
+fit.rpart <- train(diabetes ~ ., data=PimaIndiansDiabetes, method="rpart", metric="Accuracy", trControl=control)
 
 # summarize fit
 print(fit.rpart)
@@ -495,7 +495,7 @@ data(BostonHousing)
 # train
 set.seed(7)
 control <- trainControl(method="cv", number=2)
-fit.rpart <- train(medv~., data=BostonHousing, method="rpart", metric="RMSE", trControl=control)
+fit.rpart <- train(medv ~ ., data=BostonHousing, method="rpart", metric="RMSE", trControl=control)
 
 # summarize fit
 print(fit.rpart)
