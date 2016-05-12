@@ -24,13 +24,16 @@ census <- merge(census, zipcode, by.x='Zip', by.y='zip')
 
 # get a Google map
 require(ggmap)
-map<-get_map(location='united states', zoom=4, maptype = "terrain",
-             source='google',color='color')
+map <- get_map(location = 'united states', 
+               zoom=4, 
+               maptype = "terrain",
+               source = 'google',
+               color = 'color')
 
 # plot it with ggplot2
 require("ggplot2")
 require("RColorBrewer")
 ggmap(map) + geom_point(
-  aes(x=longitude, y=latitude, show_guide = TRUE, colour=Median), 
-  data=census, alpha=.8, na.rm = T)  + 
-  scale_color_gradient(low="beige", high="blue")
+  aes(x=longitude, y=latitude, show_guide = TRUE, colour = Median), 
+  data = census, alpha=.8, na.rm = T)  + 
+  scale_color_gradient(low = "beige", high = "blue")
