@@ -8,7 +8,7 @@ library(pROC)
 #################################################
 
 # load data
-titanicDF <- read.csv('http://math.ucdenver.edu/RTutorial/titanic.txt',sep='\t')
+titanicDF <- read.csv('http://math.ucdenver.edu/RTutorial/titanic.txt', sep='\t')
 titanicDF$Title <- ifelse(grepl('Mr ',titanicDF$Name),'Mr',ifelse(grepl('Mrs ',titanicDF$Name),'Mrs',ifelse(grepl('Miss',titanicDF$Name),'Miss','Nothing'))) 
 titanicDF$Age[is.na(titanicDF$Age)] <- median(titanicDF$Age, na.rm=T)
 
@@ -17,9 +17,9 @@ titanicDF <- titanicDF[c('PClass', 'Age',    'Sex',   'Title', 'Survived')]
 
 # dummy variables for factors/characters
 titanicDF$Title <- as.factor(titanicDF$Title)
-titanicDummy <- dummyVars("~.",data=titanicDF, fullRank=F)
-titanicDF <- as.data.frame(predict(titanicDummy,titanicDF))
-print(names(titanicDF))
+titanicDummy <- dummyVars("~.", data=titanicDF, fullRank=F)
+titanicDF <- as.data.frame(predict(titanicDummy, titanicDF))
+names(titanicDF)
 
 
 # what is the proportion of your outcome variable?
@@ -38,7 +38,7 @@ predictorsNames <- names(titanicDF)[names(titanicDF) != outcomeName]
 # get names of all caret supported models 
 names(getModelInfo())
 
-titanicDF$Survived <- ifelse(titanicDF$Survived==1,'yes','nope')
+titanicDF$Survived <- ifelse(titanicDF$Survived==1, 'yes', 'nope')
 
 # pick model gbm and find out what type of model it is
 getModelInfo()$gbm$type
@@ -59,7 +59,6 @@ objModel <- train(trainDF[,predictorsNames], as.factor(trainDF[,outcomeName]),
                   trControl=objControl,  
                   metric = "ROC",
                   preProc = c("center", "scale"))
-)
 
 # find out variable importance
 summary(objModel)
@@ -126,9 +125,9 @@ objModel
 
 # display variable importance on a +/- scale 
 vimp <- varImp(objModel, scale=F)
-results <- data.frame(row.names(vimp$importance),vimp$importance$Overall)
+results <- data.frame(row.names(vimp$importance), vimp$importance$Overall)
 results$VariableName <- rownames(vimp)
-colnames(results) <- c('VariableName','Weight')
+colnames(results) <- c('VariableName', 'Weight')
 results <- results[order(results$Weight),]
 results <- results[(results$Weight != 0),]
 
