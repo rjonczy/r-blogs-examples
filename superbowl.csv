@@ -1,0 +1,51 @@
+"number","date","site","winner","loser","winnerScore","loserScore"
+1,1967-01-15,"Los Angeles Memorial Coliseum","Green Bay","Kansas City",35,10
+2,1968-01-14,"Orange Bowl (Miami)","Green Bay","Oakland",33,14
+3,1969-01-12,"Orange Bowl (Miami)","New York Jets","Baltimore",16,7
+4,1970-01-11,"Tulane Stadium (New Orleans)","Kansas City","Minnesota",23,7
+5,1971-01-17,"Orange Bowl (Miami)","Baltimore","Dallas",16,13
+6,1972-01-16,"Tulane Stadium (New Orleans)","Dallas","Miami",24,3
+7,1973-01-14,"Los Angeles Memorial Coliseum","Miami","Washington",14,7
+8,1974-01-13,"Rice Stadium (Houston)","Miami","Minnesota",24,7
+9,1975-01-12,"Tulane Stadium (New Orleans)","Pittsburgh","Minnesota",16,6
+10,1976-01-18,"Orange Bowl (Miami)","Pittsburgh","Dallas",21,17
+11,1977-01-09,"Rose Bowl (Pasadena, Calif.)","Oakland","Minnesota",32,14
+12,1978-01-15,"Superdome (New Orleans)","Dallas","Denver",27,10
+13,1979-01-21,"Orange Bowl (Miami)","Pittsburgh","Dallas",35,31
+14,1980-01-20,"Rose Bowl (Pasadena, Calif.)","Pittsburgh","Los Angeles",31,19
+15,1981-01-25,"Superdome (New Orleans)","Oakland","Philadelphia",27,10
+16,1982-01-24,"Silverdome (Pontiac, Mich.)","San Francisco","Cincinnati",26,21
+17,1983-01-30,"Rose Bowl (Pasadena, Calif.)","Washington","Miami",27,17
+18,1984-01-22,"Tampa (Fla.) Stadium","Los Angeles","Washington",38,9
+19,1985-01-20,"Stanford (Calif.) Stadium","San Francisco","Miami",38,16
+20,1986-01-26,"Superdome (New Orleans)","Chicago","New England",46,10
+21,1987-01-25,"Rose Bowl (Pasadena, Calif.)","New York Giants","Denver",39,20
+22,1988-01-31,"Jack Murphy Stadium (San Diego)","Washington","Denver",42,10
+23,1989-01-22,"Joe Robbie Stadium (Miami)","San Francisco","Cincinnati",20,16
+24,1990-01-28,"Superdome (New Orleans)","San Francisco","Denver",55,10
+25,1991-01-27,"Tampa (Fla.) Stadium","New York Giants","Buffalo",20,19
+26,1992-01-26,"Metrodome (Minneapolis)","Washington","Buffalo",37,24
+27,1993-01-31,"Rose Bowl (Pasadena, Calif.)","Dallas","Buffalo",52,17
+28,1994-01-30,"Georgia Dome (Atlanta)","Dallas","Buffalo",30,13
+29,1995-01-29,"Joe Robbie Stadium (Miami)","San Francisco","San Diego",49,26
+30,1996-01-28,"Sun Devil Stadium (Tempe, Ariz.)","Dallas","Pittsburgh",27,17
+31,1997-01-26,"Superdome (New Orleans)","Green Bay","New England",35,21
+32,1998-01-25,"Qualcomm Stadium (San Diego)","Denver","Green Bay",31,24
+33,1999-01-31,"Pro Player Stadium (Miami)","Denver","Atlanta",34,19
+34,2000-01-30,"Georgia Dome (Atlanta)","St. Louis","Tennessee",23,16
+35,2001-01-28,"Raymond James Stadium (Tampa, Fla.)","Baltimore","New York Giants",34,7
+36,2002-02-03,"Superdome (New Orleans)","New England","St. Louis",20,17
+37,2003-01-26,"Qualcomm Stadium (San Diego)","Tampa Bay","Oakland",48,21
+38,2004-02-01,"Reliant Stadium (Houston)","New England","Carolina",32,29
+39,2005-02-06,"Alltel Stadium (Jacksonville, Fla.)","New England","Philadelphia",24,21
+40,2006-02-05,"Ford Field (Detroit)","Pittsburgh","Seattle",21,10
+41,2007-02-04,"Dolphin Stadium (Miami)","Indianapolis","Chicago",29,17
+42,2008-02-03,"University of Phoenix Stadium (Glendale, Ariz.)","New York Giants","New England",17,14
+43,2009-02-01,"Raymond James Stadium (Tampa, Fla.)","Pittsburgh Steelers","Arizona Cardinals",27,23
+44,2010-02-07,"Sun Life Stadium (Miami)","New Orleans Saints","Indianapolis Colts",31,17
+45,2011-02-06,"Cowboys Stadium (Arlington, Texas)","Green Bay Packers","Pittsburgh Steelers",31,25
+46,2012-02-05,"Lucas Oil Stadium (Indianapolis)","New York Giants","New England Patriots",21,17
+47,2013-02-03,"Mercedes-Benz Superdome (New Orleans)","Baltimore Ravens","San Francisco 49ers",34,31
+48,2014-02-02,"MetLife Stadium (East Rutherford, N.J.)","Seattle Seahawks","Denver Broncos",43,8
+49,2015-02-01,"University of Phoenix Stadium (Glendale, Ariz.)","New England Patriots","Seattle Seahawks",28,24
+50,2016-02-07,"Levi's Stadium (Santa Clara, Calif.)","Denver Broncos","Carolina Panthers",24,10
