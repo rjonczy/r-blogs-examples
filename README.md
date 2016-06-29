@@ -46,9 +46,13 @@ Reproducible examples from different R blogs
   + Original article: http://blog.revolutionanalytics.com/2015/08/plotting-time-series-in-r.html
 
 15. [Plot points and resiuals](plot-points_with_reg_andresiduals.R)  
-  + Original article: https://rpubs.com/Radcliffe/superbowl 
 
 16. [Data scrapping - superbowl](scrape-superbowl.R)
+  + Original article: https://rpubs.com/Radcliffe/superbowl
+
+17. [Data scrapping - imdb](scrape-imdb.R)
+  + Original article: https://blog.rstudio.org/2014/11/24/rvest-easy-web-scraping-with-r/
+
 
 ## gists search of R files
 1. https://gist.github.com/search?l=r&q=language%3AR&ref=searchresults&utf8=%E2%9C%93
