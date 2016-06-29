@@ -53,6 +53,9 @@ Reproducible examples from different R blogs
 17. [Data scrapping - imdb](scrape-imdb.R)
   + Original article: https://blog.rstudio.org/2014/11/24/rvest-easy-web-scraping-with-r/
 
+18. [ggplot2 - scatterplots](ggplot-scatterplots.R)
+  + Original article: http://www.cookbook-r.com/Graphs/Scatterplots_(ggplot2)
+
 
 ## gists search of R files
 1. https://gist.github.com/search?l=r&q=language%3AR&ref=searchresults&utf8=%E2%9C%93
