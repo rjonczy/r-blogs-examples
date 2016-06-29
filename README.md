@@ -35,6 +35,20 @@ Reproducible examples from different R blogs
 
 11. [Expotential Smoothing of time series](exp_smoothing_of_time_series)
   + Original article: https://www.linkedin.com/pulse/exponential-smoothing-time-series-data-r-strickland-ph-d-cmsp
+
+12. 
+  + Original article: http://a-little-book-of-r-for-time-series.readthedocs.io/en/latest/src/timeseries.html
   
+13. 
+  + Original article + related: http://www.r-bloggers.com/plotting-time-series-data-using-ggplot2/
+  
+14.
+  + Original article: http://blog.revolutionanalytics.com/2015/08/plotting-time-series-in-r.html
+
+15. [Plot points and resiuals](plot-points_with_reg_andresiduals.R)  
+  + Original article: https://rpubs.com/Radcliffe/superbowl 
+
+16. [Data scrapping - superbowl](scrape-superbowl.R)
+
 ## gists search of R files
 1. https://gist.github.com/search?l=r&q=language%3AR&ref=searchresults&utf8=%E2%9C%93
