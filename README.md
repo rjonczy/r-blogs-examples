@@ -1,6 +1,6 @@
 # r-blogs-examples
 Reproducible examples from different R blogs
-test
+
 
 ## List of R-examples based on reproducible articles
 1. [Google Schoolarship scraping with `rvest`](google_schoolar_scrapping/)
@@ -25,7 +25,7 @@ test
 7. 
   + Original article: http://www.r-bloggers.com/color-quantization-in-r/
   
-8. !!!test!!!
+8. 
   + Original article: http://jkunst.com/r/plotting-gtfs-data-with-r/
   
 9. 
